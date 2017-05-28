@@ -27,7 +27,7 @@ public class BallsFrame extends JFrame{
         JButton btnSubmit = new JButton("Submit");
         btnSubmit.addActionListener(new SubmitActionListener()
         );
-        JSlider rangeSlider = new JSlider(10, 100, 10);
+        JSlider rangeSlider = new JSlider(0, 100, 10);
         rangeSlider.addChangeListener(new RangeSliderListener());
         panel.setLayout(new BorderLayout());
 

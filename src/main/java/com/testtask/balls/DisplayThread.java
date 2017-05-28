@@ -89,6 +89,8 @@ public class DisplayThread extends Thread {
     }
 
     public void collide(Circle currentCircle) {
+
+
         for (Circle circle : circles) {
             if (circle.getId() != currentCircle.getId()) {
 
@@ -96,7 +98,6 @@ public class DisplayThread extends Thread {
                         (currentCircle.getX() <= circle.getX() + circle.getRadius()) &&
                         (currentCircle.getY() + currentCircle.getRadius() >= circle.getY()) &&
                         (currentCircle.getY() <= circle.getY() + circle.getRadius())) {
-
                     circle.setCircleSpeedX(circle.getCircleSpeedX() * -1);
                     circle.setCircleSpeedY(circle.getCircleSpeedY() * -1);
                     currentCircle.setCircleSpeedX(currentCircle.getCircleSpeedX() * -1);
